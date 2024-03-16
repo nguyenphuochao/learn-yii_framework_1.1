@@ -357,3 +357,691 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
 ---
+2024/03/16 18:49:30 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('viewproduct')
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product/viewpro...')
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/viewproduct
+---
+2024/03/16 18:54:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "api/product/viewproduct". in C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('api/product/vie...')
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/api/product/viewproduct?id=12
+---
+2024/03/16 18:57:14 [error] [exception.CException] CException: Alias "api.ApiModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\learn-yii_framework_1.1\framework\YiiBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\YiiBase.php(204): YiiBase::import('api.ApiModule', true)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CModule.php(282): YiiBase::createComponent(Array, 'api', NULL, Array)
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(337): CModule->getModule('api')
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(276): CWebApplication->createController('product/viewpro...')
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('api/product/vie...')
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/api/product/viewproduct?id=12
+---
+2024/03/16 19:03:50 [error] [exception.CHttpException.400] CHttpException: Yêu cầu không hợp lệ in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php:68
+Stack trace:
+#0 [internal function]: ProductController->actionViewProduct('12')
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CAction.php(114): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('viewproduct')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product/viewpro...')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/viewproduct?id=12
+---
+2024/03/16 19:04:09 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "updateproduct". in C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(270): CController->missingAction('updateproduct')
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('updateproduct')
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product/updatep...')
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/updateproduct?id
+---
+2024/03/16 19:17:23 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('updateproduct')
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product/updatep...')
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/updateproduct
+---
+2024/03/16 19:18:02 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('updateproduct')
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product/updatep...')
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/updateproduct
+---
+2024/03/16 19:18:24 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('updateproduct')
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product/updatep...')
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/updateproduct
+---
+2024/03/16 19:19:09 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('updateproduct')
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product/updatep...')
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/updateproduct
+---
+2024/03/16 19:26:57 [error] [php] Undefined index: name (C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): ProductController->runAction()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): ProductController->run()
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CWebApplication->run()
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (14)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:27:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE %% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where LIKE %% order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:27:28 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE %% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where LIKE %% order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:28:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE %% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where LIKE %% order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:28:04 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE %% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where LIKE %% order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:28:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name LIKE %% order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:28:32 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name LIKE %% order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:28:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%1% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name LIKE %1% order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:28:47 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%1% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name LIKE %1% order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:28:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%'aaa'% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name LIKE %'aaa'% order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:28:52 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%'aaa'% order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name LIKE %'aaa'% order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:29:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'name' in where clause is ambiguous. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name LIKE '%aaa%' order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:29:02 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'name' in where clause is ambiguous. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name LIKE '%aaa%' order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:29:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'name' in where clause is ambiguous. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name  = 'a' order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:29:44 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'name' in where clause is ambiguous. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where name  = 'a' order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:30:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where LIKE %%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name where LIKE %%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:30:42 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where LIKE %%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name where LIKE %%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:32:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE %%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where LIKE %%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:32:14 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE %%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where LIKE %%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:32:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:32:28 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:32:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:32:51 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:33:11 [error] [php] Undefined index: name (C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): ProductController->runAction()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): ProductController->run()
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CWebApplication->run()
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (14)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:33:21 [error] [php] Undefined index: name (C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): ProductController->runAction()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): ProductController->run()
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CWebApplication->run()
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (14)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:33:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:33:54 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:34:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:34:14 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:34:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%111%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %111%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:34:34 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%111%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %111%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:34:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%111%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %111%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:34:43 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%111%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %111%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/?name
+---
+2024/03/16 19:34:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%111%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %111%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:34:54 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%111%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %111%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
+2024/03/16 19:35:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5.
+in C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php (24)
+in C:\xampp\htdocs\learn-yii_framework_1.1\index.php (13)
+2024/03/16 19:35:07 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%%  order by id desc LIMIT 0,5' at line 8. The SQL statement executed was: SELECT products.id,
+                       products.name,
+                       products.price,
+                       products.qty,
+                       products.description,
+                       categories.name as category_name
+                     FROM products inner join categories
+                     on products.category_id = categories.id where products.name LIKE %%  order by id desc LIMIT 0,5 in C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\learn-yii_framework_1.1\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\learn-yii_framework_1.1\protected\controllers\ProductController.php(24): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#3 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\learn-yii_framework_1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#8 C:\xampp\htdocs\learn-yii_framework_1.1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\learn-yii_framework_1.1\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/learn-yii_framework_1.1/index.php/product/
+---
